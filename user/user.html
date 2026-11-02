@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TechPulse Innovations | Website System</title>
+<meta name="description" content="TechPulse Innovations builds modern web and mobile applications powered by cloud and innovative technology.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="user.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<linearGradient id="tpG1" x1="0" y1="0" x2="1" y2="0.45"><stop offset="0" stop-color="#03256A"/><stop offset=".6" stop-color="#0553B8"/><stop offset="1" stop-color="#00A2FF"/></linearGradient>
+<linearGradient id="tpG2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#022B78"/><stop offset="1" stop-color="#0A62D6"/></linearGradient>
+<linearGradient id="tpG3" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#0553B8"/><stop offset=".55" stop-color="#0480FF"/><stop offset="1" stop-color="#00A6FF"/></linearGradient>
+<symbol id="tpMark" viewBox="350 110 870 560">
+<path fill="url(#tpG1)" d="M358 233 L458 122 L950 120 L848 230 L705 231 L615 505 L428 630 L560 234 Z"/>
+<path fill="url(#tpG2)" d="M722 263 L860 263 L860 296 L846 296 L780 412 L676 409 Z"/>
+<path fill="url(#tpG2)" d="M668 438 L760 438 L770 462 L788 460 L838 368 L856 508 L800 664 L594 664 Z"/>
+<path fill="url(#tpG3)" d="M930 192 L1040 192 C1150 195 1213 280 1213 375 C1213 480 1135 548 1030 548 L877 548 L923 440 L1030 438 C1080 435 1096 400 1096 370 C1096 330 1070 298 1020 297 L990 297 L945 409 L905 410 L880 460 L863 300 L860 262 Z"/>
+</symbol></defs></svg>
+<header class="site-header"><div class="container nav">
+<a href="#/" class="logo" aria-label="TechPulse Innovations home"><svg class="logo-mark" viewBox="350 110 870 560" aria-hidden="true"><use href="#tpMark" x="350" y="110" width="870" height="560"/></svg><span class="logo-text"><b>TECH</b><i>PULSE</i></span></a>
+<ul class="nav-links" id="navLinks"><li><a href="#/" data-nav="home">Home</a></li><li><a href="#/about" data-nav="about">About</a></li><li><a href="#/services" data-nav="services">Services</a></li><li><a href="#/projects" data-nav="projects">Projects</a></li><li><a href="#/platform" data-nav="platform">Platform</a></li><li><a href="#/contact" data-nav="contact">Contact</a></li></ul>
+<div class="nav-actions" id="navUser">
+  <div class="profile-menu" id="profileMenu">
+    <button type="button" class="profile-btn" id="profileBtn" aria-haspopup="menu" aria-expanded="false" aria-controls="profileDrop"><span class="p-avatar" id="pAvatar" aria-hidden="true">TP</span><span class="p-name" id="pName">Profile</span><svg class="p-chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+    <div class="profile-drop" id="profileDrop" role="menu" hidden>
+      <div class="p-head"><b id="pdName"></b><small id="pdEmail"></small></div>
+      <a href="#/profile" role="menuitem">Edit profile</a>
+      <a href="#/dashboard" role="menuitem">My dashboard</a>
+      <a href="../admin/admin.html" id="adminDashboardLink" role="menuitem" hidden>Admin dashboard</a>
+      <button type="button" id="pdLogout" role="menuitem">Log out</button>
+    </div>
+  </div>
+</div>
+<button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+</div></header>
+<main id="app" tabindex="-1" style="outline:none">
+<!-- PAGE 1: HOMEPAGE (#/) -->
+<section class="view" data-route="home" hidden><section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="hero-eyebrow">Innovative Technology.<br>Real Business Impact.</p>
+        <h1>Turning Ideas<br>into Digital Solutions</h1>
+        <p class="lead">We help businesses build modern web and mobile applications, powered by cloud and innovative technology.</p>
+        <div class="hero-actions">
+          <a href="#/contact" class="btn btn-primary">Get Started</a>
+          <a href="#/projects" class="btn btn-outline">Our Projects</a>
+        </div>
+      </div>
+
+      <div class="hero-art"><svg viewBox="0 0 570 460" role="img" aria-label="Laptop dashboard with a phone app, cloud upload, server and security shield"><defs>
+<linearGradient id="hgCloud" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6DB4FF"/><stop offset="1" stop-color="#1F6FEB"/></linearGradient>
+<linearGradient id="hgScreen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6F9FF"/><stop offset="1" stop-color="#E3EEFF"/></linearGradient>
+<linearGradient id="hgChart" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B82F6" stop-opacity=".35"/><stop offset="1" stop-color="#3B82F6" stop-opacity="0"/></linearGradient>
+<filter id="hgBlur" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
+</defs><g transform="translate(16 30) scale(0.52) translate(-600 -80)"><ellipse cx="960" cy="842" rx="370" ry="42" fill="#0D6FFD" opacity=".22" filter="url(#hgBlur)"/><g fill="none" stroke="#3B82F6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1000 268H1080"/><path d="M1182 300V322"/><path d="M1285 296H1325Q1372 296 1376 340V392Q1378 412 1436 416"/></g><rect x="902" y="164" width="48" height="48" rx="11" fill="#BBD6FF"/><rect x="898" y="158" width="48" height="48" rx="11" fill="#F1F6FF"/><rect x="816" y="386" width="40" height="40" rx="9" fill="#BBD6FF"/><rect x="812" y="380" width="40" height="40" rx="9" fill="#F1F6FF"/><rect x="812" y="476" width="48" height="48" rx="11" fill="#BBD6FF"/><rect x="808" y="470" width="48" height="48" rx="11" fill="#F1F6FF"/><rect x="1396" y="206" width="20" height="20" rx="4" fill="#BBD6FF"/><rect x="1392" y="200" width="20" height="20" rx="4" fill="#F1F6FF"/><rect x="1552" y="336" width="36" height="36" rx="8" fill="#BBD6FF"/><rect x="1548" y="330" width="36" height="36" rx="8" fill="#F1F6FF"/><rect x="802" y="211" width="152" height="112" rx="14" fill="#BBD6FF"/><rect x="798" y="205" width="152" height="112" rx="14" fill="#EAF2FF"/><rect x="816" y="228" width="104" height="10" rx="5" fill="#93C5FD"/><rect x="816" y="252" width="118" height="10" rx="5" fill="#93C5FD"/><rect x="816" y="276" width="86" height="10" rx="5" fill="#93C5FD"/><rect x="688" y="253" width="98" height="112" rx="24" fill="#1D4ED8"/><rect x="682" y="245" width="98" height="112" rx="24" fill="#3B82F6"/><g fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M718 284L700 301L718 318"/><path d="M743 279L733 323"/><path d="M757 284L775 301L757 318"/></g><rect x="1416" y="253" width="106" height="118" rx="16" fill="#BBD6FF"/><rect x="1410" y="245" width="106" height="118" rx="16" fill="#fff" stroke="#3B82F6" stroke-width="8"/><rect x="1428" y="263" width="70" height="82" rx="6" fill="#EAF2FF"/><path d="M1428 345L1452 305L1470 328L1482 312L1498 345Z" fill="#3B82F6"/><circle cx="1480" cy="285" r="7" fill="#3B82F6"/><g transform="translate(10 14)" fill="#1E5FD0"><circle cx="1105" cy="205" r="58"/><circle cx="1190" cy="172" r="78"/><circle cx="1262" cy="215" r="58"/><rect x="1075" y="205" width="235" height="88" rx="44"/></g><g fill="url(#hgCloud)"><circle cx="1105" cy="205" r="58"/><circle cx="1190" cy="172" r="78"/><circle cx="1262" cy="215" r="58"/><rect x="1075" y="205" width="235" height="88" rx="44"/></g><path d="M1166 168L1126 212H1150V256H1182V212H1206Z" fill="#fff" stroke="#fff" stroke-width="12" stroke-linejoin="round"/><polygon points="1500,540 1625,586 1500,632 1375,586" fill="#CBDDF7"/><polygon points="1375,586 1500,632 1500,646 1375,600" fill="#9DB9E6"/><polygon points="1625,586 1500,632 1500,646 1625,600" fill="#B4CBF0"/><polygon points="1415.0,520.0 1500.0,558.0 1500.0,613.0 1415.0,575.0" fill="#1D4ED8" stroke="#93C5FD" stroke-width="3" stroke-linejoin="round"/><polygon points="1585.0,520.0 1500.0,558.0 1500.0,613.0 1585.0,575.0" fill="#2563EB" stroke="#93C5FD" stroke-width="3" stroke-linejoin="round"/><polygon points="1415.0,520.0 1500.0,482.0 1585.0,520.0 1500.0,558.0" fill="#60A5FA" /><g transform="translate(1415 520) skewY(24)"><rect x="12" y="16" width="36" height="7" rx="3" fill="#93C5FD"/><circle cx="60" cy="19.5" r="4" fill="#BFDBFE"/><circle cx="72" cy="19.5" r="4" fill="#BFDBFE"/></g><g transform="translate(1500 558) skewY(-24)"><circle cx="58" cy="17" r="4" fill="#BFDBFE"/><circle cx="70" cy="17" r="4" fill="#BFDBFE"/></g><polygon points="1415.0,468.0 1500.0,506.0 1500.0,561.0 1415.0,523.0" fill="#1D4ED8" stroke="#93C5FD" stroke-width="3" stroke-linejoin="round"/><polygon points="1585.0,468.0 1500.0,506.0 1500.0,561.0 1585.0,523.0" fill="#2563EB" stroke="#93C5FD" stroke-width="3" stroke-linejoin="round"/><polygon points="1415.0,468.0 1500.0,430.0 1585.0,468.0 1500.0,506.0" fill="#60A5FA" /><g transform="translate(1415 468) skewY(24)"><rect x="12" y="16" width="36" height="7" rx="3" fill="#93C5FD"/><circle cx="60" cy="19.5" r="4" fill="#BFDBFE"/><circle cx="72" cy="19.5" r="4" fill="#BFDBFE"/></g><g transform="translate(1500 506) skewY(-24)"><circle cx="58" cy="17" r="4" fill="#BFDBFE"/><circle cx="70" cy="17" r="4" fill="#BFDBFE"/></g><polygon points="1415.0,416.0 1500.0,454.0 1500.0,509.0 1415.0,471.0" fill="#1D4ED8" stroke="#93C5FD" stroke-width="3" stroke-linejoin="round"/><polygon points="1585.0,416.0 1500.0,454.0 1500.0,509.0 1585.0,471.0" fill="#2563EB" stroke="#93C5FD" stroke-width="3" stroke-linejoin="round"/><polygon points="1415.0,416.0 1500.0,378.0 1585.0,416.0 1500.0,454.0" fill="#60A5FA" /><g transform="translate(1415 416) skewY(24)"><rect x="12" y="16" width="36" height="7" rx="3" fill="#93C5FD"/><circle cx="60" cy="19.5" r="4" fill="#BFDBFE"/><circle cx="72" cy="19.5" r="4" fill="#BFDBFE"/></g><g transform="translate(1500 454) skewY(-24)"><circle cx="58" cy="17" r="4" fill="#BFDBFE"/><circle cx="70" cy="17" r="4" fill="#BFDBFE"/></g><polygon points="668.0,718.0 1105.0,848.0 1275.0,708.0 838.0,578.0" fill="#E4EEFC" stroke="#C5D8F5" stroke-width="3" stroke-linejoin="round"/><polygon points="668.0,718.0 1105.0,848.0 1105.0,864.0 668.0,734.0" fill="#9DB9E6" /><polygon points="1105.0,848.0 1275.0,708.0 1275.0,724.0 1105.0,864.0" fill="#B4CBF0" /><polygon points="737.5,685.3 1130.8,802.3 1241.2,711.3 848.0,594.3" fill="#1E3A8A" /><polygon points="747.4,684.5 771.4,691.6 787.8,678.0 763.8,670.9" fill="#2B4FA8" /><polygon points="776.7,693.1 800.6,700.3 817.1,686.7 793.1,679.6" fill="#2B4FA8" /><polygon points="805.9,701.9 829.9,709.0 846.3,695.4 822.3,688.3" fill="#2B4FA8" /><polygon points="835.1,710.5 859.1,717.7 875.6,704.1 851.6,697.0" fill="#2B4FA8" /><polygon points="864.4,719.2 888.4,726.4 904.8,712.8 880.8,705.7" fill="#2B4FA8" /><polygon points="893.6,728.0 917.6,735.1 934.1,721.5 910.1,714.4" fill="#2B4FA8" /><polygon points="922.9,736.6 946.9,743.8 963.3,730.2 939.3,723.1" fill="#2B4FA8" /><polygon points="952.1,745.4 976.1,752.5 992.5,738.9 968.6,731.8" fill="#2B4FA8" /><polygon points="981.4,754.0 1005.3,761.2 1021.8,747.6 997.8,740.5" fill="#2B4FA8" /><polygon points="1010.6,762.8 1034.6,769.9 1051.0,756.3 1027.1,749.2" fill="#2B4FA8" /><polygon points="1039.9,771.5 1063.8,778.6 1080.3,765.0 1056.3,757.9" fill="#2B4FA8" /><polygon points="1069.1,780.1 1093.1,787.3 1109.5,773.7 1085.5,766.6" fill="#2B4FA8" /><polygon points="1098.3,788.9 1122.3,796.0 1138.8,782.4 1114.8,775.3" fill="#2B4FA8" /><polygon points="768.5,667.1 792.5,674.2 808.9,660.7 784.9,653.5" fill="#2B4FA8" /><polygon points="797.7,675.8 821.7,682.9 838.2,669.4 814.2,662.2" fill="#2B4FA8" /><polygon points="827.0,684.5 851.0,691.6 867.4,678.1 843.4,670.9" fill="#2B4FA8" /><polygon points="856.2,693.2 880.2,700.3 896.6,686.8 872.7,679.6" fill="#2B4FA8" /><polygon points="885.5,701.9 909.4,709.0 925.9,695.5 901.9,688.3" fill="#2B4FA8" /><polygon points="914.7,710.6 938.7,717.7 955.1,704.2 931.2,697.0" fill="#2B4FA8" /><polygon points="944.0,719.3 967.9,726.4 984.4,712.9 960.4,705.7" fill="#2B4FA8" /><polygon points="973.2,728.0 997.2,735.1 1013.6,721.6 989.6,714.4" fill="#2B4FA8" /><polygon points="1002.4,736.7 1026.4,743.8 1042.9,730.3 1018.9,723.1" fill="#2B4FA8" /><polygon points="1031.7,745.4 1055.7,752.5 1072.1,739.0 1048.1,731.8" fill="#2B4FA8" /><polygon points="1060.9,754.1 1084.9,761.2 1101.4,747.7 1077.4,740.5" fill="#2B4FA8" /><polygon points="1090.2,762.8 1114.2,769.9 1130.6,756.4 1106.6,749.2" fill="#2B4FA8" /><polygon points="1119.4,771.5 1143.4,778.6 1159.9,765.1 1135.9,757.9" fill="#2B4FA8" /><polygon points="789.6,649.7 813.5,656.9 830.0,643.3 806.0,636.2" fill="#2B4FA8" /><polygon points="818.8,658.4 842.8,665.6 859.2,652.0 835.3,644.9" fill="#2B4FA8" /><polygon points="848.1,667.1 872.0,674.3 888.5,660.7 864.5,653.6" fill="#2B4FA8" /><polygon points="877.3,675.8 901.3,683.0 917.7,669.4 893.7,662.3" fill="#2B4FA8" /><polygon points="906.5,684.5 930.5,691.7 947.0,678.1 923.0,671.0" fill="#2B4FA8" /><polygon points="935.8,693.2 959.8,700.4 976.2,686.8 952.2,679.7" fill="#2B4FA8" /><polygon points="965.0,701.9 989.0,709.1 1005.5,695.5 981.5,688.4" fill="#2B4FA8" /><polygon points="994.3,710.6 1018.3,717.8 1034.7,704.2 1010.7,697.1" fill="#2B4FA8" /><polygon points="1023.5,719.3 1047.5,726.5 1064.0,712.9 1040.0,705.8" fill="#2B4FA8" /><polygon points="1052.8,728.0 1076.8,735.2 1093.2,721.6 1069.2,714.5" fill="#2B4FA8" /><polygon points="1082.0,736.7 1106.0,743.9 1122.4,730.3 1098.5,723.2" fill="#2B4FA8" /><polygon points="1111.3,745.4 1135.2,752.6 1151.7,739.0 1127.7,731.9" fill="#2B4FA8" /><polygon points="1140.5,754.1 1164.5,761.3 1180.9,747.7 1157.0,740.6" fill="#2B4FA8" /><polygon points="810.6,632.4 834.6,639.5 851.1,626.0 827.1,618.8" fill="#2B4FA8" /><polygon points="839.9,641.1 863.9,648.2 880.3,634.7 856.3,627.5" fill="#2B4FA8" /><polygon points="869.1,649.8 893.1,656.9 909.6,643.4 885.6,636.2" fill="#2B4FA8" /><polygon points="898.4,658.5 922.4,665.6 938.8,652.1 914.8,644.9" fill="#2B4FA8" /><polygon points="927.6,667.2 951.6,674.3 968.1,660.8 944.1,653.6" fill="#2B4FA8" /><polygon points="956.9,675.9 980.9,683.0 997.3,669.5 973.3,662.3" fill="#2B4FA8" /><polygon points="986.1,684.6 1010.1,691.7 1026.5,678.2 1002.6,671.0" fill="#2B4FA8" /><polygon points="1015.4,693.3 1039.3,700.4 1055.8,686.9 1031.8,679.7" fill="#2B4FA8" /><polygon points="1044.6,702.0 1068.6,709.1 1085.0,695.6 1061.1,688.4" fill="#2B4FA8" /><polygon points="1073.9,710.7 1097.8,717.8 1114.3,704.3 1090.3,697.1" fill="#2B4FA8" /><polygon points="1103.1,719.4 1127.1,726.5 1143.5,713.0 1119.5,705.8" fill="#2B4FA8" /><polygon points="1132.3,728.1 1156.3,735.2 1172.8,721.7 1148.8,714.5" fill="#2B4FA8" /><polygon points="1161.6,736.8 1185.6,743.9 1202.0,730.4 1178.0,723.2" fill="#2B4FA8" /><polygon points="831.7,615.0 855.7,622.1 872.1,608.6 848.2,601.5" fill="#2B4FA8" /><polygon points="861.0,623.7 885.0,630.8 901.4,617.3 877.4,610.2" fill="#2B4FA8" /><polygon points="890.2,632.4 914.2,639.5 930.6,626.0 906.7,618.9" fill="#2B4FA8" /><polygon points="919.5,641.1 943.4,648.2 959.9,634.7 935.9,627.6" fill="#2B4FA8" /><polygon points="948.7,649.8 972.7,656.9 989.1,643.4 965.1,636.3" fill="#2B4FA8" /><polygon points="978.0,658.5 1001.9,665.6 1018.4,652.1 994.4,645.0" fill="#2B4FA8" /><polygon points="1007.2,667.2 1031.2,674.3 1047.6,660.8 1023.6,653.7" fill="#2B4FA8" /><polygon points="1036.4,675.9 1060.4,683.0 1076.9,669.5 1052.9,662.4" fill="#2B4FA8" /><polygon points="1065.7,684.6 1089.7,691.7 1106.1,678.2 1082.1,671.1" fill="#2B4FA8" /><polygon points="1094.9,693.3 1118.9,700.4 1135.4,686.9 1111.4,679.8" fill="#2B4FA8" /><polygon points="1124.2,702.0 1148.2,709.1 1164.6,695.6 1140.6,688.5" fill="#2B4FA8" /><polygon points="1153.4,710.7 1177.4,717.8 1193.8,704.3 1169.9,697.2" fill="#2B4FA8" /><polygon points="1182.7,719.4 1206.7,726.5 1223.1,713.0 1199.1,705.9" fill="#2B4FA8" /><polygon points="814.6,754.0 972.0,800.8 1002.6,775.6 845.2,728.8" fill="#C7D9F5" stroke="#B3CBF0" stroke-width="2"/><polygon points="893,274 1346,354 1294,698 858,606" fill="#1E3FA8" stroke="#1E3A8A" stroke-width="6" stroke-linejoin="round"/><g transform="matrix(1 0.1778 -0.1175 1 905 283)"><rect x="0" y="0" width="433" height="315" rx="8" fill="url(#hgScreen)"/><rect x="0" y="0" width="433" height="30" rx="8" fill="#3B82F6"/><rect x="0" y="16" width="433" height="14" fill="#3B82F6"/><circle cx="16" cy="15" r="5" fill="#FF6B6B"/><circle cx="32" cy="15" r="5" fill="#FFC53D"/><circle cx="48" cy="15" r="5" fill="#2DD4A0"/><rect x="14" y="44" width="56" height="256" rx="12" fill="#3B82F6"/><path d="M33 84L42 72L51 84V94H33Z" fill="#fff"/><rect x="28" y="116" width="28" height="5" rx="2.5" fill="#BFDBFE"/><rect x="28" y="136" width="28" height="5" rx="2.5" fill="#BFDBFE"/><rect x="28" y="156" width="28" height="5" rx="2.5" fill="#BFDBFE"/><rect x="84" y="44" width="334" height="150" rx="12" fill="#fff"/><rect x="100" y="58" width="60" height="8" rx="4" fill="#93C5FD"/><rect x="100" y="74" width="120" height="6" rx="3" fill="#DBEAFE"/><path d="M98 168L130 142L160 156L196 124L226 140L262 106L286 120V180H98Z" fill="url(#hgChart)"/><path d="M98 168L130 142L160 156L196 124L226 140L262 106L286 120" fill="none" stroke="#2563EB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="356" cy="122" r="32" fill="none" stroke="#DBEAFE" stroke-width="18"/><circle cx="356" cy="122" r="32" fill="none" stroke="#2563EB" stroke-width="18" stroke-dasharray="130 201" transform="rotate(-100 356 122)"/><rect x="84" y="208" width="106" height="92" rx="12" fill="#fff"/><circle cx="106" cy="232" r="11" fill="#3B82F6"/><rect x="126" y="224" width="48" height="6" rx="3" fill="#93C5FD"/><rect x="126" y="236" width="34" height="6" rx="3" fill="#DBEAFE"/><rect x="98" y="262" width="76" height="6" rx="3" fill="#DBEAFE"/><rect x="198" y="208" width="106" height="92" rx="12" fill="#fff"/><circle cx="220" cy="232" r="11" fill="#3B82F6"/><rect x="240" y="224" width="48" height="6" rx="3" fill="#93C5FD"/><rect x="240" y="236" width="34" height="6" rx="3" fill="#DBEAFE"/><rect x="212" y="262" width="76" height="6" rx="3" fill="#DBEAFE"/><rect x="312" y="208" width="106" height="92" rx="12" fill="#fff"/><circle cx="334" cy="232" r="11" fill="#3B82F6"/><rect x="354" y="224" width="48" height="6" rx="3" fill="#93C5FD"/><rect x="354" y="236" width="34" height="6" rx="3" fill="#DBEAFE"/><rect x="326" y="262" width="76" height="6" rx="3" fill="#DBEAFE"/></g><g transform="translate(615 404) skewY(-10)"><rect x="0" y="0" width="140" height="272" rx="26" fill="#2563EB"/><rect x="8" y="8" width="124" height="256" rx="20" fill="#F4F8FF"/><rect x="42" y="16" width="56" height="9" rx="4.5" fill="#1E40AF"/><rect x="20" y="42" width="100" height="74" rx="10" fill="#BBD6FF"/><path d="M20 116L52 76L74 100L90 82L120 116Z" fill="#3B82F6"/><circle cx="96" cy="62" r="7" fill="#3B82F6"/><rect x="18" y="130" width="104" height="46" rx="12" fill="#fff" stroke="#DBEAFE" stroke-width="2"/><circle cx="40" cy="153" r="11" fill="#3B82F6"/><rect x="58" y="146" width="48" height="6" rx="3" fill="#93C5FD"/><rect x="58" y="158" width="34" height="6" rx="3" fill="#DBEAFE"/><rect x="18" y="186" width="104" height="46" rx="12" fill="#fff" stroke="#DBEAFE" stroke-width="2"/><circle cx="40" cy="209" r="11" fill="#3B82F6"/><rect x="58" y="202" width="48" height="6" rx="3" fill="#93C5FD"/><rect x="58" y="214" width="34" height="6" rx="3" fill="#DBEAFE"/><rect x="20" y="240" width="100" height="16" rx="8" fill="#3B82F6"/></g><path d="M1358 488L1406 508V556C1406 581 1386 596 1358 604C1330 596 1310 581 1310 556V508Z" fill="#DCEBFF" stroke="#3B82F6" stroke-width="6" stroke-linejoin="round"/><circle cx="1358" cy="548" r="19" fill="none" stroke="#2563EB" stroke-width="5"/><path d="M1348 548L1356 556L1371 540" fill="none" stroke="#2563EB" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M1392 728C1338 700 1336 652 1364 622C1396 648 1406 692 1392 728Z" fill="#2563EB"/><path d="M1400 728C1418 690 1450 668 1454 646C1426 652 1394 690 1400 728Z" fill="#3B82F6"/><path d="M1396 728C1380 682 1390 642 1402 618C1428 652 1416 696 1396 728Z" fill="#60A5FA"/><path d="M1342 740L1446 736L1430 806Q1394 812 1358 806Z" fill="#F1F6FF" stroke="#CFE0FA" stroke-width="3" stroke-linejoin="round"/><ellipse cx="1394" cy="738" rx="52" ry="11" fill="#fff" stroke="#CFE0FA" stroke-width="3"/><rect x="1471" y="691" width="36" height="36" rx="8" fill="#BBD6FF"/><rect x="1467" y="685" width="36" height="36" rx="8" fill="#F1F6FF"/></g></svg></div>
+    </div>
+  </section><section class="services"><div class="container"><div class="section-head"><h2>Our Services</h2><p>End-to-end IT solutions to help your business grow.</p></div>
+<ul class="service-grid" id="homeServices"></ul><p style="margin-top:28px"><a href="#/services" class="btn btn-outline">View all services</a></p></div></section></section>
+<!-- PAGE 2: ABOUT US (#/about) -->
+<section class="view" data-route="about" hidden><div class="page-hero"><div class="container"><h1>About TechPulse Innovations</h1><p>Shaping digital solutions for a smarter tomorrow.</p></div></div><section class="section"><div class="container split"><div><h2>Who we are</h2><p>We are a team of passionate developers, designers, and problem-solvers, dedicated to creating innovative digital solutions for businesses of all sizes.</p><p>From the first conversation to launch and beyond, we work as an extension of your team so your product ships on time and keeps improving.</p></div><div class="about-logo"><img src="assets/logo.webp" width="1000" height="623" alt="TechPulse IT Solutions logo" loading="lazy" decoding="async"></div></div></section>
+<section class="section alt"><div class="container"><ul class="service-grid cols-3"><li><article class="service-card"><div class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><h3>Our Mission</h3><p>To deliver high-quality and innovative IT solutions that help businesses grow.</p></article></li><li><article class="service-card"><div class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Our Vision</h3><p>To be a trusted tech partner for businesses worldwide.</p></article></li><li><article class="service-card"><div class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9z"/><path d="M2 9h20"/></svg></div><h3>Our Values</h3><p>Integrity, innovation, and excellence in everything we build.</p></article></li></ul></div></section>
+<section class="section"><div class="container"><h2>Organization Structure</h2><ul class="team-grid">
+<li class="member"><div class="avatar" aria-hidden="true">1</div><h3>Lead Software Architect / IT Administrator</h3><p>1 employee</p></li>
+<li class="member"><div class="avatar" aria-hidden="true">8</div><h3>Software Engineers / Mobile Developers</h3><p>8 employees</p></li>
+<li class="member"><div class="avatar" aria-hidden="true">2</div><h3>UI/UX Designers</h3><p>2 employees</p></li>
+<li class="member"><div class="avatar" aria-hidden="true">2</div><h3>Project Managers</h3><p>2 employees</p></li>
+<li class="member"><div class="avatar" aria-hidden="true">2</div><h3>Business Operations &amp; Finance</h3><p>2 employees</p></li>
+</ul></div></section><section class="section"><div class="container" data-cta-band></div></section></section>
+<!-- PAGE 3: SERVICES (#/services) and SERVICE DETAIL (#/services/web-development) -->
+<section class="view" data-route="services" hidden><div class="page-hero"><div class="container"><h1>Our Services</h1><p>We provide end-to-end IT solutions to help your business grow.</p></div></div><section class="section"><div class="container"><div class="filters" role="group" aria-label="Filter services" id="svcFilters">
+<button class="chip" data-f="all" aria-pressed="true">All</button><button class="chip" data-f="dev" aria-pressed="false">Development</button><button class="chip" data-f="cloud" aria-pressed="false">Cloud &amp; Security</button><button class="chip" data-f="design" aria-pressed="false">Strategy &amp; Design</button><button class="chip" data-f="support" aria-pressed="false">Support</button></div>
+<ul class="service-grid cols-3" id="serviceGrid"></ul></div></section><section class="section"><div class="container" data-cta-band></div></section></section>
+<section class="view" data-route="service" hidden><div id="serviceDetail"></div></section>
+<!-- PAGE 4: PROJECTS (#/projects) and PROJECT DETAIL (#/projects/school-portal) -->
+<section class="view" data-route="projects" hidden><div class="page-hero"><div class="container"><h1>Our Projects</h1><p>Here are some of the projects we've worked on.</p></div></div><section class="section"><div class="container"><div class="filters" role="group" aria-label="Filter projects" id="prjFilters">
+<button class="chip" data-f="all" aria-pressed="true">All</button><button class="chip" data-f="web" aria-pressed="false">Web Development</button><button class="chip" data-f="mobile" aria-pressed="false">Mobile Apps</button><button class="chip" data-f="ui" aria-pressed="false">UI/UX Design</button></div>
+<ul class="project-grid" id="projectGrid"></ul></div></section><section class="section"><div class="container" data-cta-band></div></section></section>
+<section class="view" data-route="project" hidden><div id="projectDetail"></div></section>
+
+<!-- PAGE 5: TECHPULSE COMPUTING PLATFORM (#/platform) -->
+<section class="view" data-route="platform" hidden>
+  <div class="page-hero">
+    <div class="container">
+      <h1>TechPulse Computing Platform</h1>
+      <p>The proposed computing platform for the 15-person startup scenario. Items shown here are the design/simulation unless your team has physically configured them.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="platform-intro">
+        <div class="platform-banner">
+          <h2>Startup IT Company System</h2>
+          <p>Designed for software development, mobile development, web development, cloud integration, testing, collaboration, and secure file sharing.</p>
+        </div>
+        <div class="platform-status">
+          <h3>System Overview</h3>
+          <div class="status-row"><span>Employees / Users</span><strong>15</strong></div>
+          <div class="status-row"><span>Developer RAM</span><strong>32 GB</strong></div>
+          <div class="status-row"><span>Workstation Storage</span><strong>1 TB NVMe</strong></div>
+          <div class="status-row"><span>Central Storage</span><strong>8 TB NAS</strong></div>
+          <div class="status-row"><span>Network</span><strong>1 Gbps + Wi-Fi 6</strong></div>
+          <div class="status-row"><span>Security Plan</span><strong>Planned</strong></div>
+        </div>
+      </div>
+
+      <div class="platform-tabs" role="tablist" aria-label="Computing platform sections">
+        <button class="platform-tab active" data-platform-tab="profile">Profile</button>
+        <button class="platform-tab" data-platform-tab="hardware">Hardware</button>
+        <button class="platform-tab" data-platform-tab="os">OS</button>
+        <button class="platform-tab" data-platform-tab="network">Network</button>
+        <button class="platform-tab" data-platform-tab="virtual">Virtualization</button>
+        <button class="platform-tab" data-platform-tab="security">Security</button>
+        <button class="platform-tab" data-platform-tab="evaluation">Evaluation</button>
+      </div>
+
+
+      <div class="platform-panel active" data-platform-panel="profile">
+        <div class="notice"><strong>Project Scenario — Startup IT Company:</strong> The team has been hired as IT consultants to design and implement a computing platform that satisfies the organization's operational needs within a realistic budget.</div>
+        <h2>TechPulse Innovations — Startup IT Company</h2>
+        <div class="profile-grid">
+          <article class="profile-card">
+            <h3>1. Nature of Business</h3>
+            <p>TechPulse Innovations is an emerging software development startup specializing in mobile application development, web development, and cloud integration for local small and medium enterprises (SMEs).</p>
+          </article>
+          <article class="profile-card">
+            <h3>2. Number of Employees / Users</h3>
+            <p>The company operates with a lean team of 15 full-time employees:</p>
+            <ul>
+              <li>1 Lead Software Architect / IT Administrator</li>
+              <li>8 Software Engineers / Mobile Developers</li>
+              <li>2 UI/UX Designers</li>
+              <li>2 Project Managers</li>
+              <li>2 Business Operations &amp; Finance Staff</li>
+              <li><strong>Total: 15 full-time employees</strong></li>
+            </ul>
+          </article>
+          <article class="profile-card">
+            <h3>3. Daily Operations</h3>
+            <ul>
+              <li><strong>Software Development &amp; Testing:</strong> Developers continuously write, build, test, and debug code locally and on staging servers.</li>
+              <li><strong>Collaboration:</strong> Daily team standup meetings, screen-sharing sessions, and real-time project management updates.</li>
+              <li><strong>Client Demos &amp; File Sharing:</strong> Regular transfers of heavy graphical assets, application files, and client databases.</li>
+              <li><strong>Remote Work &amp; Cloud Access:</strong> Team members frequently connect remotely to access company databases and code repositories.</li>
+            </ul>
+          </article>
+          <article class="profile-card">
+            <h3>4. Computing Requirements</h3>
+            <ul>
+              <li><strong>High Processing Power &amp; Memory:</strong> High-core processors and at least 32 GB RAM per developer machine to run code compilers, docker containers, and virtual machines without performance lags.</li>
+              <li><strong>Centralized File &amp; Code Storage:</strong> Dedicated local network storage (NAS) for fast file sharing and automated daily backups.</li>
+              <li><strong>High-Speed Network &amp; Wi-Fi:</strong> Fast gigabit wired connections for developers and secure Wi-Fi 6 coverage for laptops and mobile test devices.</li>
+              <li><strong>Centralized Security:</strong> Role-based user access controls, firewall rules, and active endpoint protection.</li>
+            </ul>
+          </article>
+          <article class="profile-card">
+            <h3>5. Current Problems (Assumed)</h3>
+            <ul>
+              <li><strong>Hardware Bottlenecks:</strong> Employees are currently using mixed personal laptops that crash or slow down when running heavy developer tools.</li>
+              <li><strong>Data Loss Risks:</strong> File sharing is done informally via free personal cloud storage without central backup, leading to version confusion and security risks.</li>
+              <li><strong>Unsecured Network:</strong> The current Wi-Fi network lacks proper firewall rules and network segmentation, leaving test server databases vulnerable.</li>
+            </ul>
+          </article>
+          <article class="profile-card">
+            <h3>How the Website Connects to the Project</h3>
+            <p>The <strong>Platform</strong> section below translates these requirements into the proposed hardware, OS, network, virtualization, storage, security, and evaluation design.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="platform-panel" data-platform-panel="hardware">
+        <div class="notice"><strong>Estimated specifications:</strong> These specifications represent proposed hardware selections designed to meet the computing requirements of a 15-person startup IT company. They serve as an academic system design model rather than a proof of already purchased or deployed equipment.</div>
+        <h2>Hardware Design</h2>
+        <div class="system-grid">
+          <article class="system-card"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 8h8v8H8z"/></svg></div><h3>Processor</h3><p>AMD Ryzen 7 7700</p><div class="spec">8 cores / 16 threads</div></article>
+          <article class="system-card"><div class="icon-box"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h10M7 13h6"/></svg></div><h3>Motherboard</h3><p>B650 / AM5 platform</p><div class="spec">DDR5 + M.2 NVMe + Gigabit LAN</div></article>
+          <article class="system-card"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M5 5h14v14H5z"/><path d="M8 8h8v8H8z"/></svg></div><h3>RAM</h3><p>Developer workstation memory</p><div class="spec">32 GB DDR5</div></article>
+          <article class="system-card"><div class="icon-box"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h10M7 13h10"/></svg></div><h3>Local Storage</h3><p>Fast local workstation storage</p><div class="spec">1 TB NVMe SSD</div></article>
+          <article class="system-card"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M5 7h14v10H5z"/><path d="M8 4v3M16 4v3M8 17v3M16 17v3"/></svg></div><h3>Power Supply</h3><p>Reliable workstation power</p><div class="spec">650 W 80+ Bronze</div></article>
+          <article class="system-card"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M6 4h12v16H6z"/><path d="M9 7h6M9 11h6M9 15h4"/></svg></div><h3>Input Devices</h3><p>Keyboard, mouse and webcam</p><div class="spec">Comfortable, precise typing and navigation; clear video communication</div></article>
+          <article class="system-card"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M6 4h12v16H6z"/><path d="M9 7h6M9 11h6M9 15h4"/></svg></div><h3>Output Devices</h3><p>24-inch Full HD monitor and headset</p><div class="spec">Clear visuals for code and testing; crisp audio</div></article>
+          <article class="system-card"><div class="icon-box"><svg viewBox="0 0 24 24"><path d="M4 12h16M7 7h10M7 17h10"/></svg></div><h3>Network Interface</h3><p>Fast wired and wireless connectivity</p><div class="spec">1 Gbps Ethernet + Wi-Fi 6</div></article>
+          <article class="system-card"><div class="icon-box"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h10M7 14h6"/></svg></div><h3>Central NAS</h3><p>8 TB NAS for file sharing and daily backups</p><div class="spec">2 × 8 TB hard drives, RAID 1 (8 TB usable)</div></article>
+        </div>
+        <div class="table-wrap"><table class="system-table">
+          <thead><tr><th>Component</th><th>Reason for Selection</th></tr></thead>
+          <tbody>
+            <tr><td>Processor — AMD Ryzen 7 7700</td><td>Selected for its 8 cores/16 threads, which easily handle heavy coding, compiling, docker containers and virtual machines. This guarantees high performance without system slowdowns during software development.</td></tr>
+            <tr><td>Motherboard — B650 AM5</td><td>Supports high-speed DDR5 memory, fast M.2 NVMe SSD storage, and built-in gigabit LAN connectivity. It provides a reliable and stable platform for all internal workstation components.</td></tr>
+            <tr><td>RAM — 32 GB DDR5</td><td>Meets the heavy multitasking demands of modern software development. It allows developers to run web apps, mobile emulators, and development tools simultaneously without lag.</td></tr>
+            <tr><td>Storage — 1 TB NVMe SSD</td><td>Delivers fast read and write speeds for local workstation files. It ensures quick system boot times and rapid loading of software programs and project databases.</td></tr>
+            <tr><td>Storage — 8 TB NAS (RAID 1)</td><td>Two 8 TB hard drives in RAID 1 for central file sharing and automated daily backups. The mirrored drives keep project files organized in one place and ensure data is safely backed up.</td></tr>
+            <tr><td>Power Supply — 650 W 80+ Bronze</td><td>Provides steady and reliable power to each computer. Its efficient design prevents overheating while supporting high-demand daily workloads.</td></tr>
+            <tr><td>Input Devices</td><td>Keyboard, mouse and webcam selected for comfortable and precise typing and navigation, and to provide clear video communication.</td></tr>
+            <tr><td>Output Devices</td><td>A 24-inch full HD monitor provides clear visual detail for reading code and testing applications, and a headset delivers crisp audio. Together they create an efficient visual and audio workstation setup.</td></tr>
+            <tr><td>Network Interface Card</td><td>Offers 1 Gbps wired Ethernet for fast transfer of project files and code repositories. It also includes Wi-Fi 6 to allow smooth wireless testing on mobile devices and laptops.</td></tr>
+          </tbody>
+        </table></div>
+        <h2>Estimated Specifications — Total Setup</h2>
+        <div class="table-wrap"><table class="system-table">
+          <thead><tr><th>Item</th><th>Specification</th></tr></thead>
+          <tbody>
+            <tr><td>Target Deployment</td><td>15 Workstations + 1 Central NAS System</td></tr>
+            <tr><td>Workstation CPU</td><td>AMD Ryzen 7 7700 (8 Cores / 16 Threads)</td></tr>
+            <tr><td>Workstation RAM</td><td>32 GB DDR5</td></tr>
+            <tr><td>Local Storage</td><td>1 TB NVMe SSD per workstation</td></tr>
+            <tr><td>Central Storage</td><td>8 TB Usable NAS (RAID 1 configuration)</td></tr>
+            <tr><td>Networking</td><td>Gigabit Ethernet + Wi-Fi 6</td></tr>
+            <tr><td>Power Supply</td><td>650 W 80+ Bronze PSU</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <div class="platform-panel" data-platform-panel="os">
+        <h2>Operating System Configuration</h2>
+        <div class="system-grid">
+          <article class="system-card"><h3>Workstations</h3><p>Windows 11 Pro 64-bit</p><div class="spec">Developer and office workstations</div></article>
+          <article class="system-card"><h3>Server</h3><p>Ubuntu Server 24.04 LTS</p><div class="spec">Hosting development and testing services</div></article>
+          <article class="system-card"><h3>Installation</h3><p>Install OS → update drivers → system updates → software applications → configure security → connect to network → system testing</p><div class="spec">Standardized, sequential setup</div></article>
+        </div>
+        <h2>User Accounts &amp; Permissions</h2>
+        <p>User accounts are categorized into five distinct roles: IT Administrator, Developers, UI/UX Designers, Project Managers, and Operations/Finance. Role-based access control is enforced, giving IT Administrators full system maintenance access while restricting all other roles exclusively to their respective work-related files and repositories.</p>
+        <div class="table-wrap"><table class="system-table">
+          <thead><tr><th>Role</th><th>Access</th></tr></thead>
+          <tbody>
+            <tr><td>IT Administrator</td><td>Full system, network, user, and maintenance access.</td></tr>
+            <tr><td>Developers</td><td>Development, source-code, and testing resources.</td></tr>
+            <tr><td>UI/UX Designers</td><td>Design assets and project folders.</td></tr>
+            <tr><td>Project Managers</td><td>Project documentation and client files.</td></tr>
+            <tr><td>Operations / Finance</td><td>Business and finance folders only.</td></tr>
+          </tbody>
+        </table></div>
+        <h2>File Organization</h2>
+        <p>Files are structured under a main TechPulse/ folder containing organized subdirectories:</p>
+        <div class="vm-box"><strong>TechPulse/</strong><br>├─ Projects/ (Mobile Apps, Web Projects, Cloud Projects)<br>├─ Client Files/<br>├─ Design Assets/<br>├─ Documentation/<br>├─ Finance/<br>├─ Backups/<br>└─ Software/</div>
+        <h2>Backup</h2>
+        <p>The strategy relies on daily automated backups to the NAS, weekly backup verifications, monthly recovery testing, and periodic offline backups of critical company data.</p>
+      </div>
+
+      <div class="platform-panel" data-platform-panel="network">
+        <h2>Network Design</h2>
+        <div class="notice"><strong>Proposed network:</strong> The addressing below is a design for simulation/Packet Tracer and can be adjusted during actual implementation.</div>
+        <p>Star topology with centralized routing and switching.</p>
+        <div class="network-map">
+          <div class="network-flow">
+            <div class="net-node">Internet</div>
+            <div class="net-line"></div>
+            <div class="net-node">Router / Firewall<br>192.168.10.1</div>
+            <div class="net-line"></div>
+            <div class="net-node">24-Port Gigabit Managed Switch<br>192.168.10.2</div>
+            <div class="net-row">
+              <div class="net-node">Developer PCs<br>.100–.109</div>
+              <div class="net-node">NAS<br>.10</div>
+              <div class="net-node">Server / VM Host<br>.20</div>
+              <div class="net-node">Wi-Fi 6 AP<br>.30</div>
+            </div>
+            <div class="net-row">
+              <div class="net-node">Employee Laptops</div>
+              <div class="net-node">Mobile Test Devices</div>
+              <div class="net-node">Guest Devices<br>.200–.220</div>
+            </div>
+          </div>
+        </div>
+        <div class="table-wrap"><table class="system-table">
+          <thead><tr><th>Network Item</th><th>Proposed Configuration</th></tr></thead>
+          <tbody>
+            <tr><td>Network</td><td>192.168.10.0/24</td></tr>
+            <tr><td>Gateway</td><td>192.168.10.1</td></tr>
+            <tr><td>NAS</td><td>192.168.10.10</td></tr>
+            <tr><td>Server / VM Host</td><td>192.168.10.20</td></tr>
+            <tr><td>Access Point</td><td>192.168.10.30</td></tr>
+            <tr><td>Developer PCs</td><td>192.168.10.100–109</td></tr>
+            <tr><td>Other Employees</td><td>192.168.10.110–119</td></tr>
+            <tr><td>Guest Network</td><td>192.168.10.200–220, isolated from internal resources</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <div class="platform-panel" data-platform-panel="virtual">
+        <h2>Virtualization & Storage</h2>
+        <div class="vm-card">
+          <div class="vm-box"><strong>Virtualization Platform</strong>Oracle VM VirtualBox<br><br><strong>Purpose</strong>Development server simulation, isolated testing, and operating-system testing.</div>
+          <div class="vm-box"><strong>Virtual Machine</strong>TechPulse Development Server<br><br><strong>OS</strong>Ubuntu Server 24.04 LTS<br><strong>CPU</strong>4 virtual cores<br><strong>RAM</strong>8 GB<br><strong>Storage</strong>100 GB virtual disk</div>
+        </div>
+        <h2>Advantages</h2>
+        <ul class="checks">
+          <li>Reduces the need for separate physical test computers.</li>
+          <li>Provides isolated development and testing environments.</li>
+          <li>Makes better use of existing workstation resources.</li>
+          <li>Allows test environments to be created and removed easily.</li>
+        </ul>
+        <h2>Central Storage</h2>
+        <div class="system-grid">
+          <article class="system-card"><h3>NAS</h3><p>Centralized company file storage</p><div class="spec">8 TB usable</div></article>
+          <article class="system-card"><h3>RAID 1</h3><p>Storage redundancy for important files</p><div class="spec">Mirrored drives</div></article>
+          <article class="system-card"><h3>Backup</h3><p>Automated daily backup target</p><div class="spec">Centralized protection</div></article>
+        </div>
+      </div>
+
+      <div class="platform-panel" data-platform-panel="security">
+        <h2>Security & Maintenance Plan</h2>
+        <ul class="security-list">
+          <li><strong>Password Policy</strong>Minimum 12 characters, unique passwords, and immediate change if compromised.</li>
+          <li><strong>Access Control</strong>Role-based access with administrator privileges limited to the IT Administrator.</li>
+          <li><strong>Endpoint Protection</strong>Active malware protection, scheduled scans, and current security updates.</li>
+          <li><strong>Firewall</strong>Router and workstation firewall rules to block unauthorized connections.</li>
+          <li><strong>Network Segmentation</strong>Separate guest wireless access from company resources and test systems.</li>
+          <li><strong>Backup Policy</strong>Daily NAS backup, weekly verification, and periodic offline backup.</li>
+          <li><strong>Hardware Maintenance</strong>Clean systems, inspect cables, monitor temperatures and storage health.</li>
+          <li><strong>Software Updates</strong>Regular OS, security, development-tool, and endpoint-protection updates.</li>
+        </ul>
+        <h2>Maintenance Schedule</h2>
+        <div class="table-wrap"><table class="system-table">
+          <thead><tr><th>Schedule</th><th>Task</th></tr></thead>
+          <tbody>
+            <tr><td>Daily</td><td>Check backups and security alerts.</td></tr>
+            <tr><td>Weekly</td><td>Check storage and system health.</td></tr>
+            <tr><td>Monthly</td><td>Clean workstations and review accounts and permissions.</td></tr>
+            <tr><td>Quarterly</td><td>Test backup restoration and review network/firewall configuration.</td></tr>
+            <tr><td>As needed</td><td>Apply security patches and replace failing hardware.</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <div class="platform-panel" data-platform-panel="evaluation">
+        <h2>Platform Evaluation</h2>
+        <div class="eval-grid">
+          <div class="eval-card"><b>Performance</b>Strong processing, 32 GB RAM, NVMe storage, and gigabit networking support development workloads.</div>
+          <div class="eval-card"><b>Scalability</b>More workstations, storage, network ports, virtual machines, RAM, and bandwidth can be added.</div>
+          <div class="eval-card"><b>Reliability</b>RAID 1, centralized backups, preventive maintenance, and endpoint protection improve reliability.</div>
+          <div class="eval-card"><b>Security</b>Role-based access, passwords, firewalls, segmentation, endpoint protection, and backups reduce risk.</div>
+          <div class="eval-card"><b>Cost-Effectiveness</b>Higher spending is focused on developer machines, NAS, network infrastructure, and security.</div>
+          <div class="eval-card"><b>Ease of Maintenance</b>Standardized workstations and centralized management make support easier.</div>
+        </div>
+        <h2>Possible Improvements</h2>
+        <ul class="checks">
+          <li>Increase NAS capacity as project files grow.</li>
+          <li>Add redundant internet connectivity for better availability.</li>
+          <li>Upgrade selected developer machines to 64 GB RAM for heavier workloads.</li>
+          <li>Add more Wi-Fi access points if the office expands.</li>
+          <li>Implement more advanced network monitoring.</li>
+          <li>Expand virtualization resources as the number of test environments increases.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+
+
+<!-- PAGE 5: CONTACT US (#/contact) -->
+<section class="view" data-route="contact" hidden><div class="page-hero"><div class="container"><h1>Get in Touch</h1><p>We'd love to hear from you!</p></div></div><section class="section"><div class="container contact-grid">
+<div><ul class="info-list">
+<li><span class="icon-box" style="margin:0"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span><div><small>Email</small><a href="mailto:techpulse.innovations@gmail.com">techpulse.innovations@gmail.com</a></div></li>
+<li><span class="icon-box" style="margin:0"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><div><small>Phone</small><a href="tel:+639123456789">+63 912 345 6789</a></div></li>
+<li><span class="icon-box" style="margin:0"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><small>Location</small>Santa Cruz, Calabarzon, Philippines</div></li>
+<li><span class="icon-box" style="margin:0"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg></span><div><small>Project Type</small>Startup IT Company — Academic Project</div></li></ul>
+<div class="map" style="margin-bottom:24px"><iframe title="Map of Santa Cruz, Calabarzon, Philippines" src="https://www.google.com/maps?q=Santa+Cruz,+Laguna,+Philippines&amp;z=13&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+<ul class="social"><li><a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a></li><li><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a></li><li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.4a4 4 0 1 1-7.4 1.2 4 4 0 0 1 7.4-1.2zM17.5 6.5h.01"/></svg></a></li><li><a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.1-1.3-.3-2.6-1-3.8.3-1.1.3-2.3 0-3.5 0 0-1 0-3 1.5-2.6-.7-5.4-.7-8 0C6 2 5 2 5 2c-.3 1.2-.3 2.4 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.4.4-.7 1-.8 1.5-.2.5-.2 1-.2 1.5v4M9 18c-4.5 2-5-2-7-2"/></svg></a></li></ul>
+<div class="notice"><strong>Our location:</strong> The location shown is the general area (Santa Cruz, Calabarzon), not a street address.</div></div>
+<form class="form-card" id="contactForm" novalidate>
+<div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" placeholder="Enter your name"><p class="error" id="e-name"></p></div>
+<div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="Enter your email"><p class="error" id="e-email"></p></div>
+<div class="field"><label for="topic">I'm interested in</label><select id="topic" name="topic"></select></div>
+<div class="field"><label for="message">Message</label><textarea id="message" name="message" placeholder="Type your message..."></textarea><p class="error" id="e-message"></p></div>
+<button class="btn btn-primary btn-block" type="button" data-submit>Send Message</button><p class="status" id="status" role="status"></p></form>
+</div></section></section>
+<!-- PAGE 6: LOGIN / SIGN UP (#/login) and DASHBOARD (#/dashboard) -->
+<section class="view" data-route="login" hidden><div class="auth"><div class="auth-side"><a href="#/" class="logo logo-light"><svg class="logo-mark" viewBox="350 110 870 560" aria-hidden="true"><use href="#tpMark" x="350" y="110" width="870" height="560"/></svg><span class="logo-text"><b>TECH</b><i>PULSE</i></span></a><h1>Welcome Back!</h1><p>Log in to continue managing your projects, or create an account to track progress and share files with our team.</p></div>
+<div class="auth-panel"><div class="auth-box">
+<div class="login-card-brand"><svg class="login-lockup" viewBox="60 100 1420 880" role="img" aria-label="TechPulse IT Solutions"><use href="#tpMark" x="350" y="110" width="870" height="560"/><text x="110" y="845" textLength="1318" lengthAdjust="spacingAndGlyphs" font-family="Poppins,Inter,sans-serif" font-weight="800" font-size="190"><tspan fill="#061A40">TECH</tspan><tspan fill="#0D6FFD">PULSE</tspan></text><path d="M170 912 L350 908 L350 918 Z M1368 912 L1190 908 L1190 918 Z" fill="#0D6FFD"/><text x="768" y="935" text-anchor="middle" font-family="Inter,sans-serif" font-weight="500" font-size="62" letter-spacing="34" fill="#061A40">IT SOLUTIONS</text></svg></div>
+<div class="login-card-heading"><h1>Welcome Back!</h1><p>Log in to manage your projects and activity.</p></div>
+<div class="tabs" role="tablist"><button class="tab" role="tab" id="tab-login" aria-selected="true" aria-controls="panel-login">Login</button><button class="tab" role="tab" id="tab-signup" aria-selected="false" aria-controls="panel-signup">Sign Up</button></div>
+<form id="panel-login" role="tabpanel" aria-labelledby="tab-login" novalidate><div class="field"><label for="l-email">Email address</label><input id="l-email" name="l-email" type="email" autocomplete="email" placeholder="Enter your email" required><p class="error" id="e-l-email"></p></div><div class="field"><label for="l-pw">Password</label><div class="pw-wrap"><input id="l-pw" name="l-pw" type="password" autocomplete="current-password" placeholder="Enter your password" required><button type="button" class="pw-toggle" data-for="l-pw">Show</button></div><p class="error" id="e-l-pw"></p><div class="forgot-row"><button type="button" class="forgot-link" id="forgotPassword">Forgot password?</button></div></div><button class="btn btn-primary btn-block" type="button" data-submit>Login</button><p class="status" id="s-login" role="status"></p></form>
+<form id="panel-signup" role="tabpanel" aria-labelledby="tab-signup" novalidate hidden><div class="field"><label for="s-name">Full name</label><input id="s-name" name="s-name" type="text" autocomplete="name" placeholder="Enter your full name" maxlength="40" required><p class="error" id="e-s-name"></p></div><div class="field"><label for="s-email">Email address</label><input id="s-email" name="s-email" type="email" autocomplete="email" placeholder="Enter your email" required><p class="error" id="e-s-email"></p></div><div class="field"><label for="s-pw">Password</label><div class="pw-wrap"><input id="s-pw" name="s-pw" type="password" autocomplete="new-password" placeholder="At least 8 characters" required><button type="button" class="pw-toggle" data-for="s-pw">Show</button></div><p class="error" id="e-s-pw"></p></div><div class="field"><label for="s-pw2">Confirm password</label><div class="pw-wrap"><input id="s-pw2" name="s-pw2" type="password" autocomplete="new-password" placeholder="Repeat your password" required><button type="button" class="pw-toggle" data-for="s-pw2">Show</button></div><p class="error" id="e-s-pw2"></p></div><button class="btn btn-primary btn-block" type="button" data-submit>Create Account</button><p class="status" id="s-signup" role="status"></p></form>
+</div></div></div></section>
+<section class="view" data-route="forgot" hidden><div class="auth"><div class="auth-panel"><div class="auth-box">
+<div class="login-card-brand"><svg class="login-lockup" viewBox="60 100 1420 880" role="img" aria-label="TechPulse IT Solutions"><use href="#tpMark" x="350" y="110" width="870" height="560"/><text x="110" y="845" textLength="1318" lengthAdjust="spacingAndGlyphs" font-family="Poppins,Inter,sans-serif" font-weight="800" font-size="190"><tspan fill="#061A40">TECH</tspan><tspan fill="#0D6FFD">PULSE</tspan></text><path d="M170 912 L350 908 L350 918 Z M1368 912 L1190 908 L1190 918 Z" fill="#0D6FFD"/><text x="768" y="935" text-anchor="middle" font-family="Inter,sans-serif" font-weight="500" font-size="62" letter-spacing="34" fill="#061A40">IT SOLUTIONS</text></svg></div>
+<div class="login-card-heading"><h1>Reset password</h1><p id="fp-sub">Create a new password for your account.</p></div>
+<form id="fp-step2" novalidate><div class="field"><label for="fp-pw">New password</label><div class="pw-wrap"><input id="fp-pw" name="fp-pw" type="password" autocomplete="new-password" placeholder="At least 8 characters" required><button type="button" class="pw-toggle" data-for="fp-pw">Show</button></div><p class="error" id="e-fp-pw"></p></div><div class="field"><label for="fp-pw2">Confirm new password</label><div class="pw-wrap"><input id="fp-pw2" name="fp-pw2" type="password" autocomplete="new-password" placeholder="Repeat your new password" required><button type="button" class="pw-toggle" data-for="fp-pw2">Show</button></div><p class="error" id="e-fp-pw2"></p></div><button class="btn btn-primary btn-block" type="button" data-submit>Reset password</button></form>
+<p class="status" id="s-forgot" role="status"></p>
+<p class="fp-back"><a href="#/login" class="forgot-link">&larr; Back to login</a></p>
+
+</div></div></div></section>
+<section class="view" data-route="dashboard" hidden><div class="page-hero"><div class="container"><h1 id="hello">Welcome</h1><p id="who">Track your projects and share files with the TechPulse team.</p></div></div>
+<section class="section"><div class="container"><div class="stats"><div class="form-card stat"><b id="st1">0</b><span>Active projects</span></div><div class="form-card stat"><b id="st2">0%</b><span>Average progress</span></div><div class="form-card stat"><b id="st3">0</b><span>Files shared</span></div></div>
+<div class="dash-grid"><div class="form-card"><h2 style="font-size:1.2rem;margin-bottom:8px">Project tracking</h2><div id="projectsList"></div><p style="margin:16px 0 0"><a href="#/contact" class="btn btn-outline btn-sm">Request a new project</a></p></div>
+<div class="form-card"><h2 style="font-size:1.2rem;margin-bottom:16px">File sharing</h2><div class="dropzone" id="drop"><p style="margin:0 0 12px">Drag files here or choose files to attach.</p><label class="btn btn-primary btn-sm" style="cursor:pointer;margin:0">Choose files<input id="files" type="file" multiple hidden></label></div>
+<ul class="file-list" id="fileList"></ul><p class="status" style="color:var(--text-muted);font-weight:400">Shared files are visible to the TechPulse team.</p></div></div>
+<p style="margin-top:28px"><button class="btn btn-outline" id="logout" type="button">Log out</button></p></div></section></section>
+<section class="view" data-route="profile" hidden><div class="page-hero"><div class="container"><h1>Your Profile</h1><p>Edit the name shown in the top bar and on your messages.</p></div></div><section class="section"><div class="container profile-edit"><form class="form-card" id="profileForm" novalidate>
+<div class="avatar-lg" id="pfAvatar" aria-hidden="true">TP</div>
+<div class="field"><label for="pf-name">Display name</label><input id="pf-name" name="pf-name" maxlength="40" autocomplete="nickname" placeholder="Your name"><p class="error" id="e-pf-name"></p></div>
+<div class="field"><label for="pf-email">Email</label><input id="pf-email" name="pf-email" readonly></div>
+<div class="btn-row"><button class="btn btn-primary" type="button" data-submit>Save changes</button></div>
+<p class="status" id="s-profile" role="status"></p></form></div></section></section>
+<section class="view" data-route="404" hidden><div class="page-hero"><div class="container"><h1>Page not found</h1><p>That page doesn't exist. Use the menu or head back home.</p></div></div><section class="section"><div class="container"><a href="#/" class="btn btn-primary">Back to home</a></div></section></section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><span>&copy; <span id="year">2026</span> TechPulse Innovations. All rights reserved.</span>
+<nav class="footer-links" aria-label="Footer"><a href="#/about">About</a><a href="#/services">Services</a><a href="#/projects">Projects</a><a href="#/platform">Platform</a><a href="#/contact">Contact</a></nav></div></footer>
+<script src="user.js"></script>
+</body>
+</html>
