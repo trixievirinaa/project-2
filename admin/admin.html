@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin Dashboard | TechPulse Innovations</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="image/TechPulse-Icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<!-- ============ ADMIN LOGIN ============ -->
+<div class="login" id="loginScreen" hidden>
+  <div class="login-card">
+    <div class="logo"><img src="image/TechPulse Pulsewave Logo.png" alt="TechPulse" width="955" height="174"></div>
+    <h1>Admin sign in</h1><p class="sub">Manage users, messages and activity.</p>
+    <div class="field"><label for="a-email">Email</label><input id="a-email" type="email" autocomplete="username" placeholder="you@gmail.com"></div>
+    <div class="field"><label for="a-pw">Password</label><input id="a-pw" type="password" autocomplete="current-password" placeholder="Enter your password"></div>
+    <p class="error" id="a-err" role="alert"></p>
+    <button class="btn" id="a-go" type="button" style="width:100%">Sign in</button>
+    <div class="hint" id="a-hint">Use the same account you use on the TechPulse website. <a href="../user/user.html#/login">Go to website login</a></div>
+  </div>
+</div>
+
+<!-- ============ ADMIN APP ============ -->
+<div class="app" id="app" hidden>
+  <aside class="side" id="side">
+    <div class="logo"><img src="image/TechPulse-Logo-Horizontal-White.png" alt="TechPulse" width="955" height="174"></div>
+    <small>Manage</small>
+    <nav aria-label="Admin">
+      <a class="nav-a" href="#/" data-nav="overview" id="n-overview"></a>
+      <a class="nav-a" href="#/users" data-nav="users" id="n-users"></a>
+      <a class="nav-a" href="#/messages" data-nav="messages" id="n-messages"></a>
+      <a class="nav-a" href="#/activity" data-nav="activity" id="n-activity"></a>
+      <a class="nav-a" href="#/settings" data-nav="settings" id="n-settings"></a>
+    </nav>
+    <div class="bottom">
+      <a class="nav-a" href="../user/user.html" target="_blank" rel="noopener" id="n-site"></a>
+      <button class="nav-a" id="n-out" data-act="logout" type="button" style="background:none;border:0;cursor:pointer;text-align:left;width:100%"></button>
+    </div>
+  </aside>
+  <div class="scrim" data-act="menu" aria-hidden="true"></div>
+  <div class="main">
+    <header class="top">
+      <button class="icon-btn menu-btn" data-act="menu" type="button" aria-label="Open menu" id="b-menu"></button>
+      <h1 id="pageTitle">Overview</h1><span class="spacer"></span>
+      <span class="live"><i></i> Live</span>
+      <div class="me"><div class="avatar" id="meAv">A</div><span id="meName">Admin</span></div>
+    </header>
+    <main id="view" tabindex="-1"></main>
+  </div>
+</div>
+
+<div class="overlay" id="overlay" hidden><div class="dialog" id="dlg" role="dialog" aria-modal="true"></div></div>
+<div id="toasts" aria-live="polite"></div>
+<input type="file" id="importFile" accept=".json,application/json" hidden>
+
+<script src="admin.js"></script>
+</body>
+</html>
